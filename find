@@ -1,0 +1,3 @@
+# Find version tag, prioritizing non-rc release tags
+VERSION := shell('if [ -z "$1" ]; then
+    if [ -z "$2" ]; then
