@@ -1,1 +1,4 @@
 _LAST_TAG := shell("echo $1 | tr ' ' '\n' | tail -n 1", _PROJECT_TAGS)
+GOARCH := env('GOARCH', `go env GOARCH`)
+TARGETOS := env('TARGETOS', GOOS)
+TARGETARCH := env('TARGETARCH', GOARCH)
