@@ -1,1 +1,4 @@
 _LAST_TAG := shell("echo $1 | tr ' ' '\n' | tail -n 1", _PROJECT_TAGS)
+[private]
+go_test SELECTOR *FLAGS:
+    go test -v {{_GORACE_FLAG}} {{FLAGS}} {{SELECTOR}}
