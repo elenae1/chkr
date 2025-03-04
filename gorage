@@ -1,0 +1,1 @@
+_GORACE_FLAG := if GORACE == "1" { "-race " } else { "" }
